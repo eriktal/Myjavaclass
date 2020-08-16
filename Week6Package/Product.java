@@ -4,9 +4,14 @@ public class Product {
     String name;
     double price;
     int quantity;
+    public Product(String name, double price, int   quantity){
+        this.name = name;
+        this.quantity = quantity;
+        this.price = price;
+    }
 
-    public double totalPrice(double price, int quantity){
-        return (price*quantity);
+    public double totalPrice(){
+        return(price*quantity);
     }
     public void setName(String name){
         this.name = name;
@@ -14,13 +19,28 @@ public class Product {
     public String getName(){
         return this.name;
     }
+    public void setPrice(double price){
+        this.price = price;
+    }
+    public double getPrice(){
+        return this.price;
+    }
+    public void setQuantity(int quantity){
+        this.quantity = quantity;
+    }
+    public int getQuantity(){
+        return this.quantity;
+    }
 
     public static void main(String[] args) {
-       Product obj = new Product();
-       obj.setName("Order Name: ");
-       System.out.println((obj.getName()));
-       System.out.println("Total: "+obj.totalPrice(100.5,22));
-
+       Product obj = new Product("Rice",12.5,22);
+       obj.setName("Banana");
+       obj.setQuantity(225);
+       obj.setPrice(22.5);
+        System.out.println("Product Name: "+ obj.getName());
+        System.out.println("Unit Price ($): "+ obj.getPrice());
+        System.out.println("Quantity: "+ obj.getQuantity());
+        System.out.println("Total($): "+obj.totalPrice());
     }
 
 }

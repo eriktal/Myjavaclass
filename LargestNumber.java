@@ -1,41 +1,21 @@
-public class SRT {
+import java.util.Scanner;
 
+public class LargestNumber {
     public static void main(String[] args) {
-        int num2 = 20;
-        int num3 = 30;
-        if (num2 == num3) {
-            System.out.println(" num2 and num3 are equal");
-        } else {
-            System.out.println("num2 and num3 are not equal");
-        }
+        int num1, num2, x,y, num3;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number");
+        num1 = sc.nextInt();
+        System.out.println("Enter a second number");
+        num2 = sc.nextInt();
+        System.out.println("Enter your last number");
+        num3 = sc.nextInt();
+        x = (num1 > num2)? num1:num2;
+        y = (num3 > num1)? num3:num1;
+        System.out.println("The biggest number is " + y);
 
-        if (num2 != num3) {
-            System.out.println("num2 is different than num3");
-        } else {
-            System.out.println("num2 is equal to num3"); }
 
-        if (num2 % 2 == 0) {
-            System.out.println("num2 is even");
-        } else {
-            System.out.println("num2 is odd");
-        }
-        if (num2 > num3) {
-            System.out.println("num2 is greater than num3");
-        } else {
-            System.out.println("num2 is not greater than num3");
-        }
-            int x = 10 , z;
-            int y = 100;
-            z = (x== 10)? 200 : 500;
-            System.out.println("Z is equal to " + z); }
 
 
     }
-
-
-
-
-
-
-
-
+}

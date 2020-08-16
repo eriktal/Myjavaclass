@@ -2,12 +2,13 @@
 import java.util.Scanner;
 
 public class MyLoops {
+    int number;
+    private int age;
         public void myHomework() {
             int num,total=0, count=0;
             Scanner scan = new Scanner(System.in);
             System.out.println("Enter value to get the sum of it's natural numbers.");
             num = scan.nextInt();
-
             while( count<=num){
                 total = total + count;
                 count++;}
@@ -33,26 +34,34 @@ public class MyLoops {
         }
 
             //Calculate the factorial of a number using while loop.
-            static void myFactorial(){
+            public void myFactorial(){
             long result = 1;
-            int number;
             Scanner scan= new Scanner(System.in);
             System.out.println("Enter a number to get a factorial!");
             number = scan.nextInt();
 
+            if (number<0){
+                System.out.println("Enter a greater than 0 please");
+            }
             while (number>0){
                 result = result*number;
                 number--;}
-                System.out.println("The factorial of is "+ result);
+                System.out.println("The factorial is "+ result);
             }
 
     public static void main(String[] args) {
         MyLoops obj= new MyLoops();
         obj.myHomework();
         myWhileLoop();
-        myFactorial();
+        obj.myFactorial();
         System.out.println("Have a lovely day!");
 
+    }
+    public int myPrivate(){
+            return this.age;
+    }
+    public void getMyPrivate(int age){
+            this.age= age;
     }
     }
 

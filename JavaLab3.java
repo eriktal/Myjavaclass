@@ -2,10 +2,10 @@ import java.util.Scanner;
 
 public class JavaLab3 {
     //Calculating hydrostatic pressure
-    static void hydraulic_Pressure_Calculator() {
+    public static void hydraulic_Pressure_Calculator() {
         int pressure;
-        int depth = 100;
-        int density = 8;
+        int depth ;
+        int density;
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the depth in ft ");
         depth = sc.nextInt();
