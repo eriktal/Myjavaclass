@@ -13,22 +13,29 @@ public class Product {
     public double totalPrice(){
         return(price*quantity);
     }
-    public void setName(String name){
+    public void setName(String name) {
         this.name = name;
     }
-    public String getName(){
+    public String getName()
+    {
+
         return this.name;
     }
-    public void setPrice(double price){
+    public void setPrice(double price)
+    {
         this.price = price;
+
     }
-    public double getPrice(){
+    public double getPrice()
+    {
         return this.price;
     }
-    public void setQuantity(int quantity){
+    public void setQuantity(int quantity)
+    {
         this.quantity = quantity;
     }
-    public int getQuantity(){
+    public int getQuantity()
+    {
         return this.quantity;
     }
 
