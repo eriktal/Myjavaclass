@@ -40,7 +40,7 @@ public class Product {
     }
 
     public static void main(String[] args) {
-       Product obj = new Product("Rice",12.5,22);
+       Products obj = new Products("Rice",12.5,22);
        obj.setName("Banana");
        obj.setQuantity(225);
        obj.setPrice(22.5);
