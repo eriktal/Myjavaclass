@@ -7,7 +7,7 @@ package LabWeek10;
              }
              },GREEN;
          public void myColors() {
-             System.out.println("This is the best");
+             System.out.println("This is my best color");
          }
      }
      class Test {
